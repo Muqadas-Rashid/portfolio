@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Muqadas Rashid | Electrical Engineer</title>
+  
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+</head>
+<body>
+  <!-- 🌐 Navigation -->
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#experience">Experience</a>
+    <a href="#contact">Contact</a>
+    <button id="theme-toggle">🌗 Toggle Theme</button>
+  </nav>
+
+  <!-- 🔵 Header -->
+  <header>
+    <h1>Muqadas Rashid</h1>
+    <p><span class="spark">⚡</span>Electrical Engineer | Creative & Passionate</p>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <a href="Muqadas_Rashid_CV.pdf" download class="cv-download-btn" title="Download CV">
+    <i class="fas fa-file-download"></i> Download CV
+</a>
+
+  </header>
+
+  <!-- ℹ️ About -->
+  <section id="about" data-aos="fade-up">
+    <h2>About Me</h2>
+    <p>
+  I’m an electrical engineering enthusiast driven by a passion for innovation and problem-solving. I thrive on building real-world solutions through embedded systems, automation, and signal processing. With a hands-on approach and a curious mindset, I love translating complex ideas into smart, efficient designs.
+    </p>
+<p>
+  From circuit simulation to real-time systems, I enjoy working with tools like <strong>MATLAB</strong>, <strong>Simulink</strong>, <strong>PSIM</strong>, <strong>Python</strong>, and <strong>Proteus</strong>. Whether it's control engineering or embedded applications, I’m always exploring smarter, more creative ways to bring ideas to life.
+</p>
+<p>
+  I believe in continuous learning and collaborative growth—let’s build something impactful together!
+</p>
+  </section>
+  <!-- ℹ️ Info Section -->
+<section id="info" data-aos="fade-up">
+  <h2>Quick Info</h2>
+  <div class="info-grid">
+    <div class="info-card">
+      <h3>🎓 Degree</h3>
+      <p>BE Electrical Engineering - NUST</p>
+    </div>
+    <div class="info-card">
+      <h3>🧠 Interests</h3>
+      <p>Embedded Systems, Power Electronics, Control, Automation</p>
+    </div>
+    <div class="info-card">
+      <h3>💡 Strengths</h3>
+      <p>Creative Thinker, Hands-On Builder, Detail-Oriented</p>
+    </div>
+    <div class="info-card">
+      <h3>📍 Location</h3>
+      <p>Pakistan</p>
+    </div>
+  </div>
+</section>
+
+  <!-- 🚀 Projects -->
+  <section id="projects">
+    <h2 data-aos="fade-up">My Projects</h2>
+
+    <div class="project" data-aos="fade-up">
+      <img src="images/dc_motor.png" alt="DC Motor Drive" />
+      <div class="project-info">
+        <h3>🔌 100kW DC Motor Drive</h3>
+        
+        <button onclick="openModal(
+  '100 kW DC Motor Drive with SCR-Based Armature Voltage Control and Regenerative Braking',
+  'Designed and simulated a <b>100 kW variable-speed DC motor drive system</b> with <b>SCR-based armature voltage (Va) control</b>.<br><br>\
+The system achieves <b>smooth torque control</b> by limiting armature current ripple to below 5% using an <b>LC filter</b>.<br><br>\
+Integrated <b>Power Factor Correction (PF = 0.9)</b> and <b>regenerative braking</b> capabilities.<br><br>\
+The project covered:<br>\
+- <b>Transformer sizing</b><br>\
+- <b>Filter design</b><br>\
+- <b>Power electronic interface development</b><br>\
+- <b>Full system validation</b> using PSIM and Proteus simulation tools.<br><br>\
+<b>Key Features:</b><br>\
+- Armature voltage control: <b>300 V to 600 V DC</b><br>\
+- 3-phase input: <b>400 V line-to-line</b><br>\
+- LC filter: <b>25 mH + 100 μF</b><br>\
+- PFC using <b>965 μF capacitor bank</b><br>\
+- Regenerative braking via <b>SCR-based chopper</b>','images/motor_drive.jpg','images/motor_drive1.jpg' )">View Details</button>
+      </div>
+    </div>
+
+    <div class="project" data-aos="fade-up">
+      <img src="images/smart_traffic.png" alt="PI-Controlled Solar Tracker" />
+      <div class="project-info">
+        <h3>🔧 Analog Self-designed PI-Controlled Solar Tracker</h3>
+        <button onclick="openModal(
+  'Analog PI-Controlled Solar Tracker Using DC Motor',
+  'Developed a <b>low-cost solar tracking system</b> using an <b>analog Proportional-Integral (PI) controller</b> built with op-amps to maximize solar panel efficiency.<br><br>\
+Used <b>Light Dependent Resistors (LDRs)</b> to detect sunlight direction and drive a <b>DC motor</b> for automatic panel alignment.<br><br>\
+Performed <b>transfer function modeling</b> and <b>MATLAB simulations</b> to tune PI controller gains (<b>Kp</b>, <b>Ki</b>).<br><br>\
+The system was prototyped on a <b>breadboard and vero board</b>, offering <b>smooth and stable tracking</b> ideal for low-speed solar applications — all without using microcontrollers.<br><br>\
+<b>Key Features:</b><br>\
+- Analog PI control via op-amps<br>\
+- Real-time sun tracking using LDRs<br>\
+- No microcontroller required<br>\
+- Hardware prototyping using discrete components',
+  'images/solar_tracker.png')">View Details</button>
+      </div>
+    </div>
+
+    <div class="project" data-aos="fade-up">
+      <img src="images/med_dispenser.png" alt="FM Receiver" />
+      <div class="project-info">
+        <h3>📡 PLL-Based FM Receiver Using GNU Radio</h3>
+        <button onclick="openModal(
+  'PLL-Based FM Receiver Using GNU Radio',
+  'Designed and implemented a <b>high-performance FM radio receiver</b> using <b>GNU Radio</b> and a <b>superheterodyne architecture</b>, targeting the <b>88–108 MHz FM band</b>.<br><br>\
+Integrated advanced DSP blocks including:<br>\
+- <b>Frequency Xlating FIR Filter</b><br>\
+- <b>Phase-Locked Loop (PLL)</b> for carrier tracking<br>\
+- <b>Rational Resampler</b> for optimized audio fidelity<br><br>\
+Developed a <b>WBFM demodulation chain</b> with <b>real-time QT GUI visualization</b>.<br><br>\
+Receiver was tuned to <b>106.2 MHz</b> and successfully validated using live signal capture via <b>USRP B200</b> SDR hardware.<br><br>\
+<b>Key Features:</b><br>\
+- PLL-based frequency tracking<br>\
+- Superheterodyne architecture for selectivity<br>\
+- Real-time spectrum and audio visualization<br>\
+- SDR integration with USRP B200',
+  'images/fm_receiver.png')">View Details</button>
+      </div>
+    </div>
+
+    <div class="project" data-aos="fade-up">
+      <img src="images/med_dispenser.png" alt="Heart Rate Monitor" />
+      <div class="project-info">
+        <h3>❤️‍🔥 Heart Rate Monitor Using Optical Sensing
+</h3>
+        <button onclick="openModal(
+  'Heart Rate Monitor Using Optical Sensing',
+  'Built a <b>portable heart rate monitor</b> using <b>optical sensing</b> techniques to detect pulse from fingertip blood flow changes.<br><br>\
+Used an <b>infrared LED and photodiode pair</b> to capture light absorption variation due to heartbeats.<br><br>\
+Amplified and filtered the signal using <b>active analog filters</b> to extract clean pulse waveform.<br><br>\
+Displayed real-time heart rate readings on an <b>LCD screen</b> using microcontroller-based signal processing.<br><br>\
+<b>Key Features:</b><br>\
+- Non-invasive optical pulse detection<br>\
+- Analog signal conditioning (amplification + filtering)<br>\
+- Real-time display on LCD<br>\
+- Compact and wearable prototype',
+  'images/heart_rate_monitor.png')">View Details</button>
+      </div>
+    </div>
+
+    <div class="project" data-aos="fade-up">
+      <img src="images/med_dispenser.png" alt="EV Charger" />
+      <div class="project-info">
+        <h3>🔌 48V EV Charger with Auto Cut-Off, Thermal Protection, and LCD Temperature Display</h3>
+        <button onclick="openModal(
+  '48V EV Charger with Auto Cut-Off, Thermal Protection, and LCD Temperature Display',
+  'Designed and developed a <b>48V Electric Vehicle Charger</b> equipped with safety and monitoring features for efficient charging.<br><br>\
+Integrated <b>Auto Cut-Off functionality</b> to stop charging at optimal battery voltage.<br><br>\
+Implemented a <b>thermal protection system</b> to monitor and prevent overheating.<br><br>\
+Included a <b>real-time LCD temperature display</b> for diagnostics and system awareness.<br><br>\
+Optimized the charger for <b>user-friendliness, compact size, and EV compatibility</b>.<br><br>\
+<b>Key Features:</b><br>\
+- Auto Cut-Off to prevent overcharging<br>\
+- Thermal protection via temperature sensing<br>\
+- LCD display for real-time monitoring<br>\
+- Safe and efficient design for EV applications',
+  'images/ev_charger.png')">View Details</button>
+      </div>
+    </div>
+
+    <div class="project" data-aos="fade-up">
+      <img src="images/med_dispenser.png" alt="Traffic Management System" />
+      <div class="project-info">
+        <h3>🚦 Traffic Management System Using Ultrasonic and IR Sensors</h3>
+        <button onclick="openModal(
+  'Traffic Management System Using Ultrasonic and IR Sensors',
+  'Developed an <b>intelligent traffic management system</b> using <b>ultrasonic</b> and <b>infrared (IR) sensors</b> to optimize vehicle flow at intersections.<br><br>\
+Used <b>ultrasonic sensors</b> to measure traffic density and detect vehicle movement in real-time.<br><br>\
+<b>IR sensors</b> were employed to monitor vehicle presence at stop lines, dynamically triggering signal changes.<br><br>\
+Built a <b>traffic light control module</b> that adjusts signal timing based on detected traffic, reducing congestion and wait times.<br><br>\
+<b>Key Features:</b><br>\
+- Real-time traffic detection using ultrasonic & IR sensors<br>\
+- Dynamic signal timing adjustment<br>\
+- Scalable, modular design for different intersections<br>\
+- Ideal for smart city applications',
+  'images/traffic_system.png')">View Details</button>
+      </div>
+    </div>
+
+    <div class="project" data-aos="fade-up">
+      <img src="images/med_dispenser.png" alt="Library Management System" />
+      <div class="project-info">
+        <h3>📚 Library Management System in Python</h3>
+        <button onclick="openModal(
+  'Library Management System in Python',
+  'Developed a <b>Library Management System</b> using <b>Python</b> to streamline book handling and member services in libraries.<br><br>\
+The system provides an intuitive interface for <b>adding, searching, issuing, and returning books</b>.<br><br>\
+Included features for <b>member registration</b>, <b>overdue fine tracking</b>, and <b>report generation</b>.<br><br>\
+Focused on building an <b>object-oriented and modular architecture</b> for easy maintenance and expansion.<br><br>\
+<b>Key Features:</b><br>\
+- Book and member record management<br>\
+- Issuance and return system with fine tracking<br>\
+- Inventory and overdue reporting<br>\
+- Built fully in Python with file-based storage',
+  'images/library_system.png')">View Details</button>
+
+      </div>
+    </div>
+
+    <div class="project" data-aos="fade-up">
+      <img src="images/med_dispenser.png" alt="Tachometer" />
+      <div class="project-info">
+        <h3>💡 LED-Based Tachometer</h3>
+        <button onclick="openModal(
+  'LED-Based Tachometer',
+  'Designed and built an <b>LED-based tachometer</b> to visually display <b>RPM (Rotations Per Minute)</b> of a DC motor using LED indicators.<br><br>\
+Utilized an <b>IR sensor</b> to detect motor rotations and an <b>Arduino Uno</b> to process the signals and calculate RPM in real time.<br><br>\
+Used <b>LM3914 IC</b> to control the LED bar graph — where each LED corresponds to a specific RPM range (e.g., 1 LED = 100 RPM).<br><br>\
+Successfully deployed the system in <b>Formula Electric Racing – NUST</b> to enhance motor speed visibility.<br><br>\
+<b>Key Features:</b><br>\
+- Real-time RPM measurement<br>\
+- LED-based intuitive visual feedback<br>\
+- IR sensor for non-contact RPM detection<br>\
+- Used Arduino and LM3914 for control & display',
+  'images/led_tachometer.png')">View Details</button>
+
+      </div>
+    </div>
+
+    <div class="project" data-aos="fade-up">
+      <img src="images/med_dispenser.png" alt="Traffic Management System" />
+      <div class="project-info">
+        <h3>🚦 Traffic Management System Using Ultrasonic and IR Sensors</h3>
+        <button onclick="openModal(
+  'Traffic Management System Using Ultrasonic and IR Sensors',
+  'Developed an <b>intelligent traffic management system</b> using <b>ultrasonic</b> and <b>infrared (IR) sensors</b> to optimize vehicle flow at intersections.<br><br>\
+Used <b>ultrasonic sensors</b> to measure traffic density and detect vehicle movement in real-time.<br><br>\
+<b>IR sensors</b> were employed to monitor vehicle presence at stop lines, dynamically triggering signal changes.<br><br>\
+Built a <b>traffic light control module</b> that adjusts signal timing based on detected traffic, reducing congestion and wait times.<br><br>\
+<b>Key Features:</b><br>\
+- Real-time traffic detection using ultrasonic & IR sensors<br>\
+- Dynamic signal timing adjustment<br>\
+- Scalable, modular design for different intersections<br>\
+- Ideal for smart city applications',
+  'images/traffic_system.png')">View Details</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- 👨‍💻 Experience -->
+  <section id="experience">
+    <h2 data-aos="fade-up">Experience</h2>
+
+    <div class="project" data-aos="fade-up">
+      <img src="images/naval_ev.png" alt="Naval R&D" />
+      <div class="project-info">
+        <h3> iTecknologi Group - Software QA Intern </h3>
+        <button onclick="openModal(
+  'Software QA Intern – iTecknologi Group of Companies',
+  'Currently working as a <b>Software Quality Assurance Intern</b> at iTecknologi Group of Companies.<br><br>\
+Involved in <b>functional testing</b> and <b>live testing</b> of company portals and mobile applications, including the <b>vehicle tracking system</b>.<br><br>\
+<b>Key Responsibilities:</b><br>\
+- Manual and automated <b>API testing</b> using <b>Postman</b><br>\
+- <b>End-to-end testing</b> on live systems<br>\
+- <b>Bug reporting</b>, validation, and release compliance<br><br>\
+This role has sharpened my understanding of <b>QA workflows, bug lifecycle</b>, and <b>real-time system behavior</b>.',
+  'images/itech_logo.png')">View Details</button>
+      </div>
+    </div>
+
+    <div class="project" data-aos="fade-up">
+      <img src="images/naval_ev.png" alt="Naval R&D" />
+      <div class="project-info">
+        <h3> Naval R&D Institute PNEC – Research Assistant </h3>
+        <button onclick="openModal('Naval R&D Institute', 'Developed a 48V EV charger with auto cut-off, thermal protection, and LCD interface using embedded hardware.', 'images/naval_ev.png')">View Details</button>
+      </div>
+    </div>
+
+    <div class="project" data-aos="fade-up">
+      <img src="images/iteck_sqa.png" alt="iTecknologi Internship" />
+      <div class="project-info">
+        <h3> Formula Electric Racing – NUST (FERN)</h3>
+        <button onclick="openModal(
+  'Low Voltage System Specialist – Formula Electric Racing – NUST (FERN)',
+  'Worked as an <b>Electrical Engineer – Low Voltage System Specialist</b> in the <b>FERN</b> team for Formula Electric Racing – NUST.<br><br>\
+Gained hands-on experience with the <b>low voltage system</b> of an electric race car and learned the <b>basics of Battery Management System (BMS)</b>.<br><br>\
+Participated in <b>real-time testing</b>, <b>fault diagnosis</b>, and <b>live functional validation</b>.<br><br>\
+This experience gave me a strong foundation in <b>electric vehicle design</b>, <b>embedded systems</b>, and <b>testing protocols</b>.<br><br>\
+<b>Skills:</b> Arduino IDE, Circuit Design, Troubleshooting, PCB Design, System Testing, Teamwork, Research',
+  'images/fern_logo.png')">View Details</button>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 📬 Contact Icons -->
+<section id="contact" data-aos="fade-up">
+  <h2>Contact</h2>
+  <div class="contact-icons">
+    <a href="muqadasrashid44@gmail.com" target="_blank" title="Email">
+      <i class="fas fa-envelope"></i>
+    </a>
+    <a href="https://www.linkedin.com/in/muqadas-rashid" target="_blank" title="LinkedIn">
+      <i class="fab fa-linkedin"></i>
+    </a>
+    <a href="https://wa.me/923160298928" target="_blank" title="WhatsApp">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+    <a href="https://instagram.com/muqadas_rashid_" target="_blank" title="Instagram">
+      <i class="fab fa-instagram"></i>
+    </a>
+
+  </div>
+</section>
+
+  <footer>
+    <p>&copy; 2025 Muqadas Rashid</p>
+  </footer>
+
+  <!-- 🔲 Modal -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span onclick="closeModal()" class="close">&times;</span>
+      <h2 id="modal-title"></h2>
+      <img id="modal-image" src="" alt="" />
+      <p id="modal-desc"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>AOS.init();</script>
+</body>
+</html>
